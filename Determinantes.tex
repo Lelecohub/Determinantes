@@ -8,185 +8,196 @@
 \date{22/04/2023}
 
 \begin{document}
-
 \maketitle
 
-%Exercicio 1
+% EXERCÍCIO I
 1) Deduza o determinande 4x4 usando a f\'{o}rmula:   
 
-$$\operatorname{det}(A)=\sum_{\sigma \in S_{n}}  \left(\prod_{i=1}^{n} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right)$$ \\
-\begin{center}
-Permuta\c{c}\~{o}es
-\end{center}
+$$\operatorname{det}(A)=\sum_{\sigma \in S_{n}}  \left(\prod_{i=1}^{n} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right)$$
 
 %PERMUTAÇÕES
-\[
+\paragraph{}
+\begin{center}
+    Permuta\c{c}\~{o}es
+\end{center}
+$
 \begin{aligned} 
-& S_{4}= {\{(1,2,3,4),(1,2,4,3),(1,3,2,4),(1,3,4,2),(1,4,2,3),(1,4,3,2),} \\ & \qquad \quad 
-(2,1,3,4),(2,1,4,3),(2,3,1,4),(2,3,4,1),(2,4,1,3),(2,4,3,1) \\ & \qquad \quad 
-(3,1,2,4),(3,1,4,2),(3,2,1,4),(3,2,4,1),(3,4,1,2),(3,4,2,1), \\ & \qquad \quad 
-(4,1,2,3),(4,1,3,2),(4,2,1,3),(4,2,3,1),(4,3,1,2),(4,3,2,1)\}
+    & S_{4}= {\{(1,2,3,4),(1,2,4,3),(1,3,2,4),(1,3,4,2),(1,4,2,3),(1,4,3,2),} \\ & \qquad \quad 
+    (2,1,3,4),(2,1,4,3),(2,3,1,4),(2,3,4,1),(2,4,1,3),(2,4,3,1) \\ & \qquad \quad 
+    (3,1,2,4),(3,1,4,2),(3,2,1,4),(3,2,4,1),(3,4,1,2),(3,4,2,1), \\ & \qquad \quad 
+    (4,1,2,3),(4,1,3,2),(4,2,1,3),(4,2,3,1),(4,3,1,2),(4,3,2,1)\}
 \end{aligned}
-\]
+$
 
-\begin{center}
 %SGN
-\begin{multicols}{2}
-{$\operatorname{sgn}(1,2,3,4)=0 \\ \operatorname{sgn}(1,2,4,3)=1 \\ \operatorname{sgn}(1,3,2,4)=1 \\  
-\operatorname{sgn}(1,3,4,2)=2 \\ \operatorname{sgn}(1,4,2,3)=2 \\ \operatorname{sgn}(1,4,3,2)=3 \\ 
-\operatorname{sgn}(2,1,3,4)=1 \\ \operatorname{sgn}(2,1,4,3)=2 \\ \operatorname{sgn}(2,3,1,4)=2 \\ 
-\operatorname{sgn}(2,3,4,1)=3 \\ \operatorname{sgn}(2,4,1,3)=3 \\\operatorname{sgn}(2,4,3,1)=4 \\ 
-\operatorname{sgn}(3,1,2,4)=2 \\ \operatorname{sgn}(3,1,4,2)=3 \\ \operatorname{sgn}(3,2,1,4)=3 \\ 
-\operatorname{sgn}(3,2,4,1)=4 \\ \operatorname{sgn}(3,4,1,2)=4 \\ \operatorname{sgn}(3,4,2,1)=5 \\ 
-\operatorname{sgn}(4,1,2,3)=3 \\ \operatorname{sgn}(4,1,3,2)=4 \\ \operatorname{sgn}(4,2,1,3)=4 \\ 
-\operatorname{sgn}(4,2,3,1)=5 \\ \operatorname{sgn}(4,3,1,2)=5 \\ \operatorname{sgn}(4,3,2,1)=6$}
-\end{multicols}
-$$$$
-\end{center}
-
-%1 parte resolução
-$$n = 4$$
-
-$$\operatorname{det}(A)=\sum_{\sigma \in S_{4}}  \left(\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right) = 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 3, 4)}  ai_{(1, 2, 3, 4) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 4, 3)}  ai_{(1, 2, 4, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 2, 4)}  ai_{(1, 3, 2, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 4, 2)}  ai_{(1, 3, 4, 2) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 4, 2, 3)}  ai_{(1, 4, 2, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 4, 3, 2)}  ai_{(1, 4, 3, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 1, 3, 4)}  ai_{(2, 1, 3, 4) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 1, 4, 3)}  ai_{(2, 1, 4, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 3, 1, 4)}  ai_{(2, 3, 1, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 3, 4, 1)}  ai_{(2, 3, 4, 1) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 4, 1, 3)}  ai_{(2, 4, 1, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 4, 3, 1)}  ai_{(2, 4, 3, 1) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 1, 2, 4)}  ai_{(3, 1, 2, 4) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 1, 4, 2)}  ai_{(3, 1, 4, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 1, 4)}  ai_{(3, 2, 1, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 4, 1)}  ai_{(3, 2, 4, 1) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 1, 2)}  ai_{(3, 4, 1, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 2, 1)}  ai_{(3, 4, 2, 1) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 2, 3)}  ai_{(4, 1, 2, 3) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 3, 2)}  ai_{(4, 1, 3, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 2, 1, 3)}  ai_{(4, 2, 1, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 2, 3, 1)}  ai_{(4, 2, 3, 1) (i)} + $$
-
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 3, 1, 2)}  ai_{(4, 3, 1, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 3, 2, 1)}  ai_{(4, 3, 2, 1) (i)} $$
-\newpage
-
-\paragraph{}
-%POSIÇÕES
 \begin{center}
-Posi\c{c}\~{o}es
-\\
-\begin{multicols}{3}
-$'1,2,3,4'(1)= 1 \\ '1,2,3,4'(2)= 2 \\ '1,2,3,4'(3)= 3 \\ '1,2,3,4'(4)= 4 \\ '1,2,4,3'(1)= 1 \\
-'1,2,4,3'(2)= 2 \\ '1,2,4,3'(3)= 4 \\ '1,2,4,3'(4)= 3 \\ '1,3,2,4'(1)= 1 \\ '1,3,2,4'(2)= 3 \\
-'1,3,2,4'(3)= 2 \\ '1,3,2,4'(4)= 4 \\ '1,3,4,2'(1)= 1 \\ '1,3,4,2'(2)= 3 \\ '1,3,4,2'(3)= 4 \\ 
-'1,3,4,2'(4)= 2 \\ '1,4,2,3'(1)= 1 \\ '1,4,2,3'(2)= 4 \\ '1,4,2,3'(3)= 2 \\ '1,4,2,3'(4)= 3 \\ 
-'2,3,1,4'(1)= 2 \\ '2,3,1,4'(2)= 3 \\ '2,3,1,4'(3)= 1 \\ '2,3,1,4'(4)= 4 \\ '2,3,4,1'(1)= 2 \\
-'2,3,4,1'(2)= 3 \\ '2,3,4,1'(3)= 4 \\ '2,3,4,1'(4)= 1 \\ '2,4,1,3'(1)= 2 \\ '2,4,1,3'(2)= 4 \\
-'2,4,1,3'(3)= 1 \\ '2,4,1,3'(4)= 3 \\ '2,4,3,1'(1)= 2 \\ '2,4,3,1'(2)= 4 \\ '2,4,3,1'(3)= 3 \\
-'2,4,3,1'(4)= 1 \\ '3,1,2,4'(1)= 3 \\ '3,1,2,4'(2)= 1 \\ '3,1,2,4'(3)= 2 \\ '3,1,2,4'(4)= 4 \\
-'3,1,4,2'(1)= 3 \\ '3,1,4,2'(2)= 1 \\ '3,1,4,2'(3)= 4 \\ '3,1,4,2'(4)= 2 \\ '3,2,1,4'(1)= 3 \\
-'3,2,1,4'(2)= 2 \\ '3,2,1,4'(3)= 1 \\ '3,2,1,4'(4)= 4 \\ '3,2,4,1'(1)= 3 \\ '3,2,4,1'(2)= 2 \\
-'3,2,4,1'(3)= 4 \\ '3,2,4,1'(4)= 1 \\ '3,4,1,2'(1)= 3 \\ '3,4,1,2'(2)= 4 \\ '3,4,1,2'(3)= 1 \\
-'3,4,1,2'(4)= 2 \\ '3,4,2,1'(1)= 3 \\ '3,4,2,1'(2)= 4 \\ '3,4,2,1'(3)= 2 \\ '3,4,2,1'(4)= 1 \\
-'4,1,2,3'(1)= 4 \\ '4,1,2,3'(2)= 1 \\ '4,1,2,3'(3)= 2 \\ '4,1,2,3'(4)= 3 \\ '4,1,3,2'(1)= 4 \\
-'4,1,3,2'(2)= 1 \\ '4,1,3,2'(3)= 3 \\ '4,1,3,2'(4)= 2 \\ '4,2,1,3'(1)= 4 \\ '4,2,1,3'(2)= 2 \\
-'4,2,1,3'(3)= 1 \\ '4,2,1,3'(4)= 3 \\ '4,2,3,1'(1)= 4 \\ '4,2,3,1'(2)= 2 \\ '4,2,3,1'(3)= 3 \\
-'4,2,3,1'(4)= 1 \\ '4,3,1,2'(1)= 4 \\ '4,3,1,2'(2)= 3 \\ '4,3,1,2'(3)= 1 \\ '4,3,1,2'(4)= 2 \\
-'4,3,2,1'(1)= 4 \\ '4,3,2,1'(2)= 3 \\ '4,3,2,1'(3)= 2 \\ '4,3,2,1'(4)= 1 $
+\begin{multicols}{2}
+    $\operatorname{sgn}(1,2,3,4)=0 \\ \operatorname{sgn}(1,2,4,3)=1 \\
+    \operatorname{sgn}(1,3,2,4)=1 \\ \operatorname{sgn}(1,3,4,2)=2 \\
+    \operatorname{sgn}(1,4,2,3)=2 \\ \operatorname{sgn}(1,4,3,2)=3 \\ 
+    \operatorname{sgn}(2,1,3,4)=1 \\ \operatorname{sgn}(2,1,4,3)=2 \\ 
+    \operatorname{sgn}(2,3,1,4)=2 \\ \operatorname{sgn}(2,3,4,1)=3 \\ 
+    \operatorname{sgn}(2,4,1,3)=3 \\ \operatorname{sgn}(2,4,3,1)=4 \\ 
+    \operatorname{sgn}(3,1,2,4)=2 \\ \operatorname{sgn}(3,1,4,2)=3 \\ 
+    \operatorname{sgn}(3,2,1,4)=3 \\ \operatorname{sgn}(3,2,4,1)=4 \\ 
+    \operatorname{sgn}(3,4,1,2)=4 \\ \operatorname{sgn}(3,4,2,1)=5 \\ 
+    \operatorname{sgn}(4,1,2,3)=3 \\ \operatorname{sgn}(4,1,3,2)=4 \\ 
+    \operatorname{sgn}(4,2,1,3)=4 \\ \operatorname{sgn}(4,2,3,1)=5 \\ 
+    \operatorname{sgn}(4,3,1,2)=5 \\ \operatorname{sgn}(4,3,2,1)=6$
 \end{multicols}
 \end{center}
-\newpage
 
-%2 parte resolução
+
+% RESOLUÇÃO - PT I
 \paragraph{}
-
-$$\operatorname{det}(A)= \prod_{i=1}^{4} (-1)^0  ai_{(1, 2, 3, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^1  ai_{(1, 2, 4, 3) (i)} +
-\prod_{i=1}^{4} (-1)^1  ai_{(1, 3, 2, 4) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^2  ai_{ (1, 3, 4, 2) (i)} + 
-\prod_{i=1}^{4} (-1)^2  ai_{ (1, 4, 2, 3) (i)} +
-\prod_{i=1}^{4} (-1)^3  ai_{ (1, 4, 3, 2) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^1  ai_{(2, 1, 3, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^2  ai_{(2, 1, 4, 3) (i)} +
-\prod_{i=1}^{4} (-1)^2  ai_{(2, 3, 1, 4) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^3  ai_{(2, 3, 4, 1) (i)} + 
-\prod_{i=1}^{4} (-1)^3  ai_{(2, 4, 1, 3) (i)} +
-\prod_{i=1}^{4} (-1)^4  ai_{(2, 4, 3, 1) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^2  ai_{(3, 1, 2, 4) (i)} + 
-\prod_{i=1}^{4} (-1)^3  ai_{(3, 1, 4, 2) (i)} +
-\prod_{i=1}^{4} (-1)^3  ai_{(3, 2, 1, 4) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^4  ai_{(3, 2, 4, 1) (i)} + 
-\prod_{i=1}^{4} (-1)^4  ai_{(3, 4, 1, 2) (i)} +
-\prod_{i=1}^{4} (-1)^5  ai_{(3, 4, 2, 1)(i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^3  ai_{(4, 1, 2, 3) (i)} + 
-\prod_{i=1}^{4} (-1)^4  ai_{(4, 1, 3, 2) (i)} +
-\prod_{i=1}^{4} (-1)^4  ai_{(4, 2, 1, 3) (i)} +$$
-
-$$\prod_{i=1}^{4} (-1)^5  ai_{(4, 2, 3, 1) (i)} + 
-\prod_{i=1}^{4} (-1)^5  ai_{(4, 3, 1, 2) (i)} +
-\prod_{i=1}^{4} (-1)^6  ai_{(4, 3, 2, 1) (i)} +$$
+    $$n = 4$$
+    $$\operatorname{det}(A)=\sum_{\sigma \in S_{4}}  \left(\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right) = 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}'1, 2, 3, 4'}  ai_{'1, 2, 3, 4' (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 4, 3)}  ai_{(1, 2, 4, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 2, 4)}  ai_{(1, 3, 2, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 4, 2)}  ai_{(1, 3, 4, 2) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 4, 2, 3)}  ai_{(1, 4, 2, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 4, 3, 2)}  ai_{(1, 4, 3, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 1, 3, 4)}  ai_{(2, 1, 3, 4) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 1, 4, 3)}  ai_{(2, 1, 4, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 3, 1, 4)}  ai_{(2, 3, 1, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 3, 4, 1)}  ai_{(2, 3, 4, 1) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 4, 1, 3)}  ai_{(2, 4, 1, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(2, 4, 3, 1)}  ai_{(2, 4, 3, 1) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 1, 2, 4)}  ai_{(3, 1, 2, 4) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 1, 4, 2)}  ai_{(3, 1, 4, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 1, 4)}  ai_{(3, 2, 1, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 4, 1)}  ai_{(3, 2, 4, 1) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 1, 2)}  ai_{(3, 4, 1, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 2, 1)}  ai_{(3, 4, 2, 1) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 2, 3)}  ai_{(4, 1, 2, 3) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 3, 2)}  ai_{(4, 1, 3, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 2, 1, 3)}  ai_{(4, 2, 1, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 2, 3, 1)}  ai_{(4, 2, 3, 1) (i)} + $$
+    
+    $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 3, 1, 2)}  ai_{(4, 3, 1, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 3, 2, 1)}  ai_{(4, 3, 2, 1) (i)} $$
 
 \newpage
 
+
+%POSIÇÕES
+\paragraph{}
+\begin{center}
+    Posi\c{c}\~{o}es
+\\
+
+\begin{multicols}{3}
+    $'1,2,3,4'(1)= 1 \\ '1,2,3,4'(2)= 2 \\ '1,2,3,4'(3)= 3 \\ '1,2,3,4'(4)= 4 \\ '1,2,4,3'(1)= 1 \\
+    '1,2,4,3'(2)= 2 \\ '1,2,4,3'(3)= 4 \\ '1,2,4,3'(4)= 3 \\ '1,3,2,4'(1)= 1 \\ '1,3,2,4'(2)= 3 \\
+    '1,3,2,4'(3)= 2 \\ '1,3,2,4'(4)= 4 \\ '1,3,4,2'(1)= 1 \\ '1,3,4,2'(2)= 3 \\ '1,3,4,2'(3)= 4 \\ 
+    '1,3,4,2'(4)= 2 \\ '1,4,2,3'(1)= 1 \\ '1,4,2,3'(2)= 4 \\ '1,4,2,3'(3)= 2 \\ '1,4,2,3'(4)= 3 \\ 
+    '2,3,1,4'(1)= 2 \\ '2,3,1,4'(2)= 3 \\ '2,3,1,4'(3)= 1 \\ '2,3,1,4'(4)= 4 \\ '2,3,4,1'(1)= 2 \\
+    '2,3,4,1'(2)= 3 \\ '2,3,4,1'(3)= 4 \\ '2,3,4,1'(4)= 1 \\ '2,4,1,3'(1)= 2 \\ '2,4,1,3'(2)= 4 \\
+    '2,4,1,3'(3)= 1 \\ '2,4,1,3'(4)= 3 \\ '2,4,3,1'(1)= 2 \\ '2,4,3,1'(2)= 4 \\ '2,4,3,1'(3)= 3 \\
+    '2,4,3,1'(4)= 1 \\ '3,1,2,4'(1)= 3 \\ '3,1,2,4'(2)= 1 \\ '3,1,2,4'(3)= 2 \\ '3,1,2,4'(4)= 4 \\
+    '3,1,4,2'(1)= 3 \\ '3,1,4,2'(2)= 1 \\ '3,1,4,2'(3)= 4 \\ '3,1,4,2'(4)= 2 \\ '3,2,1,4'(1)= 3 \\
+    '3,2,1,4'(2)= 2 \\ '3,2,1,4'(3)= 1 \\ '3,2,1,4'(4)= 4 \\ '3,2,4,1'(1)= 3 \\ '3,2,4,1'(2)= 2 \\
+    '3,2,4,1'(3)= 4 \\ '3,2,4,1'(4)= 1 \\ '3,4,1,2'(1)= 3 \\ '3,4,1,2'(2)= 4 \\ '3,4,1,2'(3)= 1 \\
+    '3,4,1,2'(4)= 2 \\ '3,4,2,1'(1)= 3 \\ '3,4,2,1'(2)= 4 \\ '3,4,2,1'(3)= 2 \\ '3,4,2,1'(4)= 1 \\
+    '4,1,2,3'(1)= 4 \\ '4,1,2,3'(2)= 1 \\ '4,1,2,3'(3)= 2 \\ '4,1,2,3'(4)= 3 \\ '4,1,3,2'(1)= 4 \\
+    '4,1,3,2'(2)= 1 \\ '4,1,3,2'(3)= 3 \\ '4,1,3,2'(4)= 2 \\ '4,2,1,3'(1)= 4 \\ '4,2,1,3'(2)= 2 \\
+    '4,2,1,3'(3)= 1 \\ '4,2,1,3'(4)= 3 \\ '4,2,3,1'(1)= 4 \\ '4,2,3,1'(2)= 2 \\ '4,2,3,1'(3)= 3 \\
+    '4,2,3,1'(4)= 1 \\ '4,3,1,2'(1)= 4 \\ '4,3,1,2'(2)= 3 \\ '4,3,1,2'(3)= 1 \\ '4,3,1,2'(4)= 2 \\
+    '4,3,2,1'(1)= 4 \\ '4,3,2,1'(2)= 3 \\ '4,3,2,1'(3)= 2 \\ '4,3,2,1'(4)= 1 $
+\end{multicols}
+\end{center}
+
+\newpage
+
+%RESOLUÇÃO - PT II
+\paragraph{}
+    $$\operatorname{det}(A)= \prod_{i=1}^{4} (-1)^0  ai_{(1, 2, 3, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^1  ai_{(1, 2, 4, 3) (i)} +
+    \prod_{i=1}^{4} (-1)^1  ai_{(1, 3, 2, 4) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^2  ai_{ (1, 3, 4, 2) (i)} + 
+    \prod_{i=1}^{4} (-1)^2  ai_{ (1, 4, 2, 3) (i)} +
+    \prod_{i=1}^{4} (-1)^3  ai_{ (1, 4, 3, 2) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^1  ai_{(2, 1, 3, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^2  ai_{(2, 1, 4, 3) (i)} +
+    \prod_{i=1}^{4} (-1)^2  ai_{(2, 3, 1, 4) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^3  ai_{(2, 3, 4, 1) (i)} + 
+    \prod_{i=1}^{4} (-1)^3  ai_{(2, 4, 1, 3) (i)} +
+    \prod_{i=1}^{4} (-1)^4  ai_{(2, 4, 3, 1) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^2  ai_{(3, 1, 2, 4) (i)} + 
+    \prod_{i=1}^{4} (-1)^3  ai_{(3, 1, 4, 2) (i)} +
+    \prod_{i=1}^{4} (-1)^3  ai_{(3, 2, 1, 4) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^4  ai_{(3, 2, 4, 1) (i)} + 
+    \prod_{i=1}^{4} (-1)^4  ai_{(3, 4, 1, 2) (i)} +
+    \prod_{i=1}^{4} (-1)^5  ai_{(3, 4, 2, 1)(i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^3  ai_{(4, 1, 2, 3) (i)} + 
+    \prod_{i=1}^{4} (-1)^4  ai_{(4, 1, 3, 2) (i)} +
+    \prod_{i=1}^{4} (-1)^4  ai_{(4, 2, 1, 3) (i)} +$$
+    
+    $$\prod_{i=1}^{4} (-1)^5  ai_{(4, 2, 3, 1) (i)} + 
+    \prod_{i=1}^{4} (-1)^5  ai_{(4, 3, 1, 2) (i)} +
+    \prod_{i=1}^{4} (-1)^6  ai_{(4, 3, 2, 1) (i)} +$$
+
+\newpage
+
+
+% RESULTADO
+\paragraph{}
 \[
-%Resultado1
 \begin{aligned}
-\operatorname{det}(A) & =
-a_{11} a_{22} a_{33} a_{44} -a_{11} a_{22} a_{43} a_{34} -a_{11} a_{32} a_{23} a_{44} +a_{11} a_{32} a_{43} a_{24} \\
-& +a_{11} a_{42} a_{23} a_{34} -a_{11} a_{42} a_{33} a_{24} -a_{21} a_{12} a_{33} a_{44} +a_{21} a_{12} a_{43} a_{34} \\
-& +a_{21} a_{32} a_{13} a_{44} -a_{21} a_{32} a_{43} a_{14} -a_{21} a_{42} a_{13} a_{34} +a_{21} a_{42} a_{33} a_{14} \\
-& +a_{31} a_{12} a_{23} a_{44} -a_{31} a_{12} a_{43} a_{24} -a_{31} a_{22} a_{13} a_{44} +a_{31} a_{22} a_{43} a_{14} \\
-& +a_{31} a_{42} a_{13} a_{24} -a_{31} a_{42} a_{23} a_{14} -a_{41} a_{12} a_{23} a_{34} +a_{41} a_{12} a_{33} a_{24} \\
-&  +a_{41} a_{22} a_{13} a_{34} -a_{41} a_{22} a_{33} a_{14} -a_{41} a_{32} a_{13} a_{24} +a_{41} a_{32} a_{23} a_{14} 
+    \operatorname{det}(A) & =
+    a_{11} a_{22} a_{33} a_{44} -a_{11} a_{22} a_{43} a_{34} -a_{11} a_{32} a_{23} 
+    a_{44} +a_{11} a_{32} a_{43} a_{24} \\
+    & +a_{11} a_{42} a_{23} a_{34} -a_{11} a_{42} a_{33} a_{24} -a_{21} a_{12} a_{33} a_{44} 
+    +a_{21} a_{12} a_{43} a_{34} \\
+    & +a_{21} a_{32} a_{13} a_{44} -a_{21} a_{32} a_{43} a_{14} -a_{21} a_{42} a_{13} a_{34} 
+    +a_{21} a_{42} a_{33} a_{14} \\
+    & +a_{31} a_{12} a_{23} a_{44} -a_{31} a_{12} a_{43} a_{24} -a_{31} a_{22} a_{13} a_{44} 
+    +a_{31} a_{22} a_{43} a_{14} \\
+    & +a_{31} a_{42} a_{13} a_{24} -a_{31} a_{42} a_{23} a_{14} -a_{41} a_{12} a_{23} a_{34} 
+    +a_{41} a_{12} a_{33} a_{24} \\
+    &  +a_{41} a_{22} a_{13} a_{34} -a_{41} a_{22} a_{33} a_{14} -a_{41} a_{32} a_{13} a_{24} 
+    +a_{41} a_{32} a_{23} a_{14} 
 \end{aligned}
 \]
-
-%Resultado2
-
 \begin{center}
-$$$$
+    $$$$
     Resultado Final \\
 \end{center}
 
 \begin{center}
-    \fbox{
+\fbox{
 \begin{aligned}
-\operatorname{det}(A) & =a_{11} a_{22} a_{33} a_{44}+a_{11} a_{32} a_{43} a_{24}+a_{11} a_{42} a_{23} a_{34} +a_{21} a_{12} a_{43} a_{34}\\
-& +a_{21} a_{32} a_{13} a_{44}+a_{21} a_{42} a_{33} a_{14} +a_{31} a_{12} a_{23} a_{44}+a_{31} a_{22} a_{43} a_{14} \\
-& +a_{31} a_{42} a_{13} a_{24} +a_{41} a_{12} a_{33} a_{24}+a_{41} a_{22} a_{13} a_{34}+a_{41} a_{32} a_{23} a_{14} \\
-& -a_{11} a_{22} a_{43} a_{34}-a_{11} a_{32} a_{23} a_{44}-a_{11} a_{42} a_{33} a_{24} -a_{21} a_{12} a_{33} a_{44} \\
-& -a_{21} a_{32} a_{43} a_{14}-a_{21} a_{42} a_{13} a_{34} -a_{31} a_{12} a_{43} a_{24}-a_{31} a_{22} a_{13} a_{44}\\
-& -a_{31} a_{42} a_{23} a_{14} -a_{41} a_{12} a_{23} a_{34}-a_{41} a_{22} a_{33} a_{14}-a_{41} a_{32} a_{13} a_{24}\\
-\end{aligned}}
+    \operatorname{det}(A) & =a_{11} a_{22} a_{33} a_{44}+a_{11} a_{32} a_{43} a_{24}+a_{11} a_{42} a_{23} a_{34} +a_{21} a_{12} a_{43} a_{34}\\
+    & +a_{21} a_{32} a_{13} a_{44}+a_{21} a_{42} a_{33} a_{14} +a_{31} a_{12} a_{23} a_{44}+a_{31} a_{22} a_{43} a_{14} \\
+    & +a_{31} a_{42} a_{13} a_{24} +a_{41} a_{12} a_{33} a_{24}+a_{41} a_{22} a_{13} a_{34}+a_{41} a_{32} a_{23} a_{14} \\
+    & -a_{11} a_{22} a_{43} a_{34}-a_{11} a_{32} a_{23} a_{44}-a_{11} a_{42} a_{33} a_{24} -a_{21} a_{12} a_{33} a_{44} \\
+    & -a_{21} a_{32} a_{43} a_{14}-a_{21} a_{42} a_{13} a_{34} -a_{31} a_{12} a_{43} a_{24}-a_{31} a_{22} a_{13} a_{44}\\
+    & -a_{31} a_{42} a_{23} a_{14} -a_{41} a_{12} a_{23} a_{34}-a_{41} a_{22} a_{33} a_{14}-a_{41} a_{32} a_{13} a_{24}\\
+\end{aligned}
+}
 \end{center}
-
-
-\\
-
-
 \newpage
-\paragraph{}
+
+
 %Exercicio 2
 2) Calcule o determinante usando o que foi deduzido, de duas matrizes definidas pelo autor (det = 0 / det $\neq$ 0):
 
+% a) Matriz 1: det(A) = 0
+\paragraph{}
 \begin{itemize}
     \item det = 0
 \end{itemize}
@@ -201,23 +212,27 @@ $$$$
   \end{array} } \right]
 \]
 
-%Matriz1
+% RESOLUÇÃO MATRIZ 1
 \[
 \begin{aligned}
-\operatorname{det}(A) & = 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 
-\cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
-& + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 
-\cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
-& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
-\cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1\\
-& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
-\cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 \\ 
-\operatorname{det}(A) & = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 \\ & \quad \ - 1 - 1 - 1 - 1 - 1 \\
-\operatorname{det}(A) & = 12-12 \\
-\operatorname{det}(A) & = 0
+    \operatorname{det}(A) & = 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 
+    \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
+    & + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 
+    \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
+    & - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
+    \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1\\
+    & - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
+    \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 \\ 
+    \operatorname{det}(A) & = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 - 1 - 1 - 1 - 1 - 1 - 1  \\ 
+    & \quad \ - 1  - 1 - 1 - 1 - 1 - 1 \\
+    \operatorname{det}(A) & = 12-12 \\
+    \operatorname{det}(A) & = 0
 \end{aligned}
 \]
 
+
+% b) Matriz 2: det(A) != 0
+\paragraph{}
 \begin{itemize}
     \item det $\neq$ 0
 \end{itemize}
@@ -232,19 +247,20 @@ $$$$
 \]
 
 \[
-%Matriz2
+% RESOLUÇÃO MATRIZ 2
 \begin{aligned}
-\operatorname{det}(B) & = 2 \cdot 2 \cdot 2 \cdot 2 + 2 \cdot 0 \cdot 0 \cdot 1 + 2 \cdot 1 \cdot 0 
-\cdot 0 + 0 \cdot 0 \cdot 0 \cdot 2 + 0 \cdot 0 \cdot 1 \cdot 2 + 0 \cdot 1 \cdot 2 \cdot 0 \\
-&  + 1 \cdot 0 \cdot 0 \cdot 2 + 1 \cdot 2 \cdot 0 \cdot 0 + 1 \cdot 1 \cdot 1 \cdot 1 + 0 \cdot 0 
-\cdot 2 \cdot 1 + 0 \cdot 2 \cdot 1 \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 1 \\
-& - 0 \cdot 2 \cdot 0 \cdot 0 - 0 \cdot 0 \cdot 0 \cdot 2 - 2 \cdot 1 \cdot 2 \cdot 1 - 0 \cdot 0 
-\cdot 2 \cdot 2 - 1 \cdot 0 \cdot 0 \cdot 0 - 0 \cdot 1 \cdot 1 \cdot 0 \\
-& - 1 \cdot 0 \cdot 0 \cdot 0 - 1 \cdot 2 \cdot 1 \cdot 2 - 1 \cdot 1 \cdot 0 \cdot 0 - 0 \cdot 0 
-\cdot 0 \cdot 0 - 0 \cdot 2 \cdot 2 \cdot 0 - 0 \cdot 0 \cdot 1 \cdot 1\\ 
-\operatorname{det}(B) & = 16 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 - 0 - 0 - 4 - 0 - 0 - 0 \\ & \quad \ - 0 - 4 - 0 - 0 - 0 - 0 \\
-\operatorname{det}(B) & = 17-8 \\
-\operatorname{det}(B) & = 9
+    \operatorname{det}(B) & = 2 \cdot 2 \cdot 2 \cdot 2 + 2 \cdot 0 \cdot 0 \cdot 1 + 2 \cdot 1 \cdot 0 
+    \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 2 + 0 \cdot 0 \cdot 1 \cdot 2 + 0 \cdot 1 \cdot 2 \cdot 0 \\
+    &  + 1 \cdot 0 \cdot 0 \cdot 2 + 1 \cdot 2 \cdot 0 \cdot 0 + 1 \cdot 1 \cdot 1 \cdot 1 + 0 \cdot 0 
+    \cdot 2 \cdot 1 + 0 \cdot 2 \cdot 1 \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 1 \\
+    & - 0 \cdot 2 \cdot 0 \cdot 0 - 0 \cdot 0 \cdot 0 \cdot 2 - 2 \cdot 1 \cdot 2 \cdot 1 - 0 \cdot 0 
+    \cdot 2 \cdot 2 - 1 \cdot 0 \cdot 0 \cdot 0 - 0 \cdot 1 \cdot 1 \cdot 0 \\
+    & - 1 \cdot 0 \cdot 0 \cdot 0 - 1 \cdot 2 \cdot 1 \cdot 2 - 1 \cdot 1 \cdot 0 \cdot 0 - 0 \cdot 0 
+    \cdot 0 \cdot 0 - 0 \cdot 2 \cdot 2 \cdot 0 - 0 \cdot 0 \cdot 1 \cdot 1\\ 
+    \operatorname{det}(B) & = 16 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 - 0 - 0 - 4 - 0 - 0 - 0 \\ 
+    & \quad \ - 0 - 4 - 0 - 0 - 0 - 0 \\
+    \operatorname{det}(B) & = 17-8 \\
+    \operatorname{det}(B) & = 9
 \end{aligned}
 \]
 
