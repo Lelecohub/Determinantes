@@ -1,3 +1,4 @@
+#FUNÇÕES
 def menor (matriz, i, j):
     return [linha[:j] + linha[j+1:] for linha in (matriz[:i] + matriz[i+1:])]
 
@@ -13,7 +14,7 @@ def determinante(matriz):
             det += sinal * matriz[0][j] * determinante(men)
         return det
     
-
+#DEFINIÇÃO MATRIZ NxN    
 n = int(input("Defina o tamanho da matriz (N): "))
 
 if  n <= 0:
