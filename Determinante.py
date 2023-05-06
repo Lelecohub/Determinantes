@@ -13,9 +13,7 @@ def determinante(matriz):
             det += sinal * matriz[0][j] * determinante(men)
         return det
     
-    
 n = int(input("Defina o tamanho da matriz (N): "))
-
 if  n <= 0:
     print("Erro: Insira valor inteiro maior que 0.")
 else:
