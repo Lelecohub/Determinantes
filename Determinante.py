@@ -14,8 +14,6 @@ def determinante(matriz):
         return det
     
     
-    
-
 n = int(input("Defina o tamanho da matriz (N): "))
 
 if  n <= 0:
@@ -34,5 +32,3 @@ else:
     A = matriz
     det_A = determinante(A)
     print("\ndeterminante(A) = ", det_A)
-
-    
