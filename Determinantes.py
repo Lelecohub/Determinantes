@@ -13,8 +13,6 @@ def determinante(matriz):
             det += sinal * matriz[0][j] * determinante(men)
         return det
     
-    
-    
 
 n = int(input("Defina o tamanho da matriz (N): "))
 
@@ -34,5 +32,3 @@ else:
     A = matriz
     det_A = determinante(A)
     print("\ndeterminante(A) = ", det_A)
-
-    
