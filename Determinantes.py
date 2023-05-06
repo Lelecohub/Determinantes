@@ -20,16 +20,17 @@ n = int(input("Defina o tamanho da matriz (N): "))
 if  n <= 0:
     print("Erro: Insira valor inteiro maior que 0.")
 else:
+#INSERÇÃO VALORES DA MATRIZ
     matriz = [[0] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
             valor = int(input(f"Digite o valor para a posição ({i+1}, {j+1}): "))
             matriz[i][j] = valor
-           
+#IMPRESSÃO MATRIZ
     print("\nMatriz A =") 
     for linha in matriz: 
         print(linha)
-    
+#IMPRESSÃO DETERMINANTE DA MATRIZ    
     A = matriz
     det_A = determinante(A)
     print("\ndeterminante(A) = ", det_A)
