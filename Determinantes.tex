@@ -24,14 +24,24 @@ Permuta\c{c}\~{o}es
 %PERMUTAÇÕES
 \[
 \begin{aligned} 
-& S_{4}= {\{(1,2,3,4),(1,2,4,3),(1,3,2,4),(1,3,4,2),(1,4,2,3),(1,4,3,2),} \\ & \qquad \quad (2,1,3,4),(2,1,4,3),(2,3,1,4),(2,3,4,1),(2,4,1,3),(2,4,3,1) \\ & \qquad \quad (3,1,2,4),(3,1,4,2),(3,2,1,4),(3,2,4,1),(3,4,1,2),(3,4,2,1), \\ & \qquad \quad (4,1,2,3),(4,1,3,2),(4,2,1,3),(4,2,3,1),(4,3,1,2),(4,3,2,1)\}
+& S_{4}= {\{(1,2,3,4),(1,2,4,3),(1,3,2,4),(1,3,4,2),(1,4,2,3),(1,4,3,2),} \\ & \qquad \quad 
+(2,1,3,4),(2,1,4,3),(2,3,1,4),(2,3,4,1),(2,4,1,3),(2,4,3,1) \\ & \qquad \quad 
+(3,1,2,4),(3,1,4,2),(3,2,1,4),(3,2,4,1),(3,4,1,2),(3,4,2,1), \\ & \qquad \quad 
+(4,1,2,3),(4,1,3,2),(4,2,1,3),(4,2,3,1),(4,3,1,2),(4,3,2,1)\}
 \end{aligned}
 \]
 
 \begin{center}
 %SGN
 \begin{multicols}{2}
-{$\operatorname{sgn}(1,2,3,4)=0 \\ \operatorname{sgn}(1,2,4,3)=1 \\ \operatorname{sgn}(1,3,2,4)=1 \\  \operatorname{sgn}(1,3,4,2)=2 \\ \operatorname{sgn}(1,4,2,3)=2 \\ \operatorname{sgn}(1,4,3,2)=3 \\ \operatorname{sgn}(2,1,3,4)=1 \\ \operatorname{sgn}(2,1,4,3)=2 \\ \operatorname{sgn}(2,3,1,4)=2 \\ \operatorname{sgn}(2,3,4,1)=3 \\ \operatorname{sgn}(2,4,1,3)=3 \\\operatorname{sgn}(2,4,3,1)=4 \\ \operatorname{sgn}(3,1,2,4)=2 \\ \operatorname{sgn}(3,1,4,2)=3 \\ \operatorname{sgn}(3,2,1,4)=3 \\ \operatorname{sgn}(3,2,4,1)=4 \\ \operatorname{sgn}(3,4,1,2)=4 \\ \operatorname{sgn}(3,4,2,1)=5 \\ \operatorname{sgn}(4,1,2,3)=3 \\ \operatorname{sgn}(4,1,3,2)=4 \\ \operatorname{sgn}(4,2,1,3)=4 \\ \operatorname{sgn}(4,2,3,1)=5 \\ \operatorname{sgn}(4,3,1,2)=5 \\ \operatorname{sgn}(4,3,2,1)=6$}
+{$\operatorname{sgn}(1,2,3,4)=0 \\ \operatorname{sgn}(1,2,4,3)=1 \\ \operatorname{sgn}(1,3,2,4)=1 \\  
+\operatorname{sgn}(1,3,4,2)=2 \\ \operatorname{sgn}(1,4,2,3)=2 \\ \operatorname{sgn}(1,4,3,2)=3 \\ 
+\operatorname{sgn}(2,1,3,4)=1 \\ \operatorname{sgn}(2,1,4,3)=2 \\ \operatorname{sgn}(2,3,1,4)=2 \\ 
+\operatorname{sgn}(2,3,4,1)=3 \\ \operatorname{sgn}(2,4,1,3)=3 \\\operatorname{sgn}(2,4,3,1)=4 \\ 
+\operatorname{sgn}(3,1,2,4)=2 \\ \operatorname{sgn}(3,1,4,2)=3 \\ \operatorname{sgn}(3,2,1,4)=3 \\ 
+\operatorname{sgn}(3,2,4,1)=4 \\ \operatorname{sgn}(3,4,1,2)=4 \\ \operatorname{sgn}(3,4,2,1)=5 \\ 
+\operatorname{sgn}(4,1,2,3)=3 \\ \operatorname{sgn}(4,1,3,2)=4 \\ \operatorname{sgn}(4,2,1,3)=4 \\ 
+\operatorname{sgn}(4,2,3,1)=5 \\ \operatorname{sgn}(4,3,1,2)=5 \\ \operatorname{sgn}(4,3,2,1)=6$}
 \end{multicols}
 $$$$
 \end{center}
@@ -42,7 +52,8 @@ $$n = 4$$
 $$\operatorname{det}(A)=\sum_{\sigma \in S_{4}}  \left(\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right) = 
 \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 3, 4)}  ai_{(1, 2, 3, 4) (i)} + $$
 
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 4, 3)}  ai_{(1, 2, 4, 3) (i)} + \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 2, 4)}  ai_{(1, 3, 2, 4) (i)} + 
+$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 2, 4, 3)}  ai_{(1, 2, 4, 3) (i)} + 
+\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 2, 4)}  ai_{(1, 3, 2, 4) (i)} + 
 \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 3, 4, 2)}  ai_{(1, 3, 4, 2) (i)} + $$
 
 $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(1, 4, 2, 3)}  ai_{(1, 4, 2, 3) (i)} + 
@@ -61,7 +72,8 @@ $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 1, 4, 2)}  ai_{(3, 1, 4, 2) (i)} 
 \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 1, 4)}  ai_{(3, 2, 1, 4) (i)} + 
 \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 2, 4, 1)}  ai_{(3, 2, 4, 1) (i)} + $$
 
-$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 1, 2)}  ai_{(3, 4, 1, 2) (i)} + \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 2, 1)}  ai_{(3, 4, 2, 1) (i)} + 
+$$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 1, 2)}  ai_{(3, 4, 1, 2) (i)} + 
+\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(3, 4, 2, 1)}  ai_{(3, 4, 2, 1) (i)} + 
 \prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 2, 3)}  ai_{(4, 1, 2, 3) (i)} + $$
 
 $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 1, 3, 2)}  ai_{(4, 1, 3, 2) (i)} + 
@@ -78,90 +90,23 @@ $$\prod_{i=1}^{4} (-1)^ {\operatorname{sgn}(4, 3, 1, 2)}  ai_{(4, 3, 1, 2) (i)} 
 Posi\c{c}\~{o}es
 \\
 \begin{multicols}{3}
-$'1,2,3,4'(1)= 1 \\
-'1,2,3,4'(2)= 2 \\
-'1,2,3,4'(3)= 3 \\
-'1,2,3,4'(4)= 4 \\
-'1,2,4,3'(1)= 1 \\
-'1,2,4,3'(2)= 2 \\
-'1,2,4,3'(3)= 4 \\
-'1,2,4,3'(4)= 3 \\
-'1,3,2,4'(1)= 1 \\
-'1,3,2,4'(2)= 3 \\
-'1,3,2,4'(3)= 2 \\
-'1,3,2,4'(4)= 4 \\
-'1,3,4,2'(1)= 1 \\
-'1,3,4,2'(2)= 3 \\
-'1,3,4,2'(3)= 4 \\
-'1,3,4,2'(4)= 2 \\
-'1,4,2,3'(1)= 1 \\
-'1,4,2,3'(2)= 4 \\
-'1,4,2,3'(3)= 2 \\
-'1,4,2,3'(4)= 3 \\
-'2,3,1,4'(1)= 2 \\
-'2,3,1,4'(2)= 3 \\
-'2,3,1,4'(3)= 1 \\
-'2,3,1,4'(4)= 4 \\
-'2,3,4,1'(1)= 2 \\
-'2,3,4,1'(2)= 3 \\
-'2,3,4,1'(3)= 4 \\
-'2,3,4,1'(4)= 1 \\
-'2,4,1,3'(1)= 2 \\
-'2,4,1,3'(2)= 4 \\
-'2,4,1,3'(3)= 1 \\
-'2,4,1,3'(4)= 3 \\
-'2,4,3,1'(1)= 2 \\
-'2,4,3,1'(2)= 4 \\
-'2,4,3,1'(3)= 3 \\
-'2,4,3,1'(4)= 1 \\
-'3,1,2,4'(1)= 3 \\
-'3,1,2,4'(2)= 1 \\
-'3,1,2,4'(3)= 2 \\
-'3,1,2,4'(4)= 4 \\
-'3,1,4,2'(1)= 3 \\
-'3,1,4,2'(2)= 1  \\
-'3,1,4,2'(3)= 4 \\
-'3,1,4,2'(4)= 2 \\
-'3,2,1,4'(1)= 3 \\
-'3,2,1,4'(2)= 2 \\
-'3,2,1,4'(3)= 1 \\
-'3,2,1,4'(4)= 4 \\
-'3,2,4,1'(1)= 3 \\
-'3,2,4,1'(2)= 2 \\
-'3,2,4,1'(3)= 4 \\
-'3,2,4,1'(4)= 1  \\
-'3,4,1,2'(1)= 3 \\
-'3,4,1,2'(2)= 4 \\
-'3,4,1,2 '(3)= 1 \\
-'3,4,1,2'(4)= 2 \\
-'3,4,2,1'(1)= 3 \\
-'3,4,2,1'(2)= 4 \\
-'3,4,2,1'(3)= 2 \\
-'3,4,2,1'(4)= 1 \\
-'4,1,2,3'(1)= 4 \\
-'4,1,2,3'(2)= 1 \\
-'4,1,2,3'(3)= 2 \\
-'4,1,2,3'(4)= 3 \\
-'4,1,3,2'(1)= 4 \\
-'4,1,3,2'(2)= 1 \\
-'4,1,3,2'(3)= 3 \\
-'4,1,3,2'(4)= 2 \\
-'4,2,1,3'(1)= 4 \\
-'4,2,1,3'(2)= 2 \\
-'4,2,1,3'(3)= 1 \\
-'4,2,1,3'(4)= 3 \\
-'4,2,3,1'(1)= 4 \\
-'4,2,3,1'(2)= 2 \\
-'4,2,3,1'(3)= 3 \\
-'4,2,3,1'(4)= 1 \\
-'4,3,1,2'(1)= 4 \\
-'4,3,1,2'(2)= 3 \\
-'4,3,1,2'(3)= 1 \\
-'4,3,1,2'(4)= 2 \\
-'4,3,2,1'(1)= 4 \\
-'4,3,2,1'(2)= 3 \\
-'4,3,2,1'(3)= 2 \\
-'4,3,2,1'(4)= 1 $
+$'1,2,3,4'(1)= 1 \\ '1,2,3,4'(2)= 2 \\ '1,2,3,4'(3)= 3 \\ '1,2,3,4'(4)= 4 \\ '1,2,4,3'(1)= 1 \\
+'1,2,4,3'(2)= 2 \\ '1,2,4,3'(3)= 4 \\ '1,2,4,3'(4)= 3 \\ '1,3,2,4'(1)= 1 \\ '1,3,2,4'(2)= 3 \\
+'1,3,2,4'(3)= 2 \\ '1,3,2,4'(4)= 4 \\ '1,3,4,2'(1)= 1 \\ '1,3,4,2'(2)= 3 \\ '1,3,4,2'(3)= 4 \\ 
+'1,3,4,2'(4)= 2 \\ '1,4,2,3'(1)= 1 \\ '1,4,2,3'(2)= 4 \\ '1,4,2,3'(3)= 2 \\ '1,4,2,3'(4)= 3 \\ 
+'2,3,1,4'(1)= 2 \\ '2,3,1,4'(2)= 3 \\ '2,3,1,4'(3)= 1 \\ '2,3,1,4'(4)= 4 \\ '2,3,4,1'(1)= 2 \\
+'2,3,4,1'(2)= 3 \\ '2,3,4,1'(3)= 4 \\ '2,3,4,1'(4)= 1 \\ '2,4,1,3'(1)= 2 \\ '2,4,1,3'(2)= 4 \\
+'2,4,1,3'(3)= 1 \\ '2,4,1,3'(4)= 3 \\ '2,4,3,1'(1)= 2 \\ '2,4,3,1'(2)= 4 \\ '2,4,3,1'(3)= 3 \\
+'2,4,3,1'(4)= 1 \\ '3,1,2,4'(1)= 3 \\ '3,1,2,4'(2)= 1 \\ '3,1,2,4'(3)= 2 \\ '3,1,2,4'(4)= 4 \\
+'3,1,4,2'(1)= 3 \\ '3,1,4,2'(2)= 1  \\ '3,1,4,2'(3)= 4 \\ '3,1,4,2'(4)= 2 \\ '3,2,1,4'(1)= 3 \\
+'3,2,1,4'(2)= 2 \\ '3,2,1,4'(3)= 1 \\ '3,2,1,4'(4)= 4 \\ '3,2,4,1'(1)= 3 \\ '3,2,4,1'(2)= 2 \\
+'3,2,4,1'(3)= 4 \\ '3,2,4,1'(4)= 1  \\ '3,4,1,2'(1)= 3 \\ '3,4,1,2'(2)= 4 \\ '3,4,1,2'(3)= 1 \\
+'3,4,1,2'(4)= 2 \\ '3,4,2,1'(1)= 3 \\ '3,4,2,1'(2)= 4 \\ '3,4,2,1'(3)= 2 \\ '3,4,2,1'(4)= 1 \\
+'4,1,2,3'(1)= 4 \\ '4,1,2,3'(2)= 1 \\ '4,1,2,3'(3)= 2 \\ '4,1,2,3'(4)= 3 \\ '4,1,3,2'(1)= 4 \\
+'4,1,3,2'(2)= 1 \\ '4,1,3,2'(3)= 3 \\ '4,1,3,2'(4)= 2 \\ '4,2,1,3'(1)= 4 \\ '4,2,1,3'(2)= 2 \\
+'4,2,1,3'(3)= 1 \\ '4,2,1,3'(4)= 3 \\ '4,2,3,1'(1)= 4 \\ '4,2,3,1'(2)= 2 \\ '4,2,3,1'(3)= 3 \\
+'4,2,3,1'(4)= 1 \\ '4,3,1,2'(1)= 4 \\ '4,3,1,2'(2)= 3 \\ '4,3,1,2'(3)= 1 \\ '4,3,1,2'(4)= 2 \\
+'4,3,2,1'(1)= 4 \\ '4,3,2,1'(2)= 3 \\ '4,3,2,1'(3)= 2 \\ '4,3,2,1'(4)= 1 $
 \end{multicols}
 \end{center}
 \newpage
@@ -261,10 +206,14 @@ $$$$
 %Matriz1
 \[
 \begin{aligned}
-\operatorname{det}(A) & = 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
-& + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
-& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1\\
-& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 \\ 
+\operatorname{det}(A) & = 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 
+\cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
+& + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 
+\cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1 + 1 \cdot 1 \cdot 1 \cdot 1\\
+& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
+\cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1\\
+& - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 
+\cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 - 1 \cdot 1 \cdot 1 \cdot 1 \\ 
 \operatorname{det}(A) & = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 \\ & \quad \ - 1 - 1 - 1 - 1 - 1 \\
 \operatorname{det}(A) & = 12-12 \\
 \operatorname{det}(A) & = 0
@@ -287,10 +236,14 @@ $$$$
 \[
 %Matriz2
 \begin{aligned}
-\operatorname{det}(B) & = 2 \cdot 2 \cdot 2 \cdot 2 + 2 \cdot 0 \cdot 0 \cdot 1 + 2 \cdot 1 \cdot 0 \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 2 + 0 \cdot 0 \cdot 1 \cdot 2 + 0 \cdot 1 \cdot 2 \cdot 0 \\
-&  + 1 \cdot 0 \cdot 0 \cdot 2 + 1 \cdot 2 \cdot 0 \cdot 0 + 1 \cdot 1 \cdot 1 \cdot 1 + 0 \cdot 0 \cdot 2 \cdot 1 + 0 \cdot 2 \cdot 1 \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 1 \\
-& - 0 \cdot 2 \cdot 0 \cdot 0 - 0 \cdot 0 \cdot 0 \cdot 2 - 2 \cdot 1 \cdot 2 \cdot 1 - 0 \cdot 0 \cdot 2 \cdot 2 - 1 \cdot 0 \cdot 0 \cdot 0 - 0 \cdot 1 \cdot 1 \cdot 0 \\
-& - 1 \cdot 0 \cdot 0 \cdot 0 - 1 \cdot 2 \cdot 1 \cdot 2 - 1 \cdot 1 \cdot 0 \cdot 0 - 0 \cdot 0 \cdot 0 \cdot 0 - 0 \cdot 2 \cdot 2 \cdot 0 - 0 \cdot 0 \cdot 1 \cdot 1\\ 
+\operatorname{det}(B) & = 2 \cdot 2 \cdot 2 \cdot 2 + 2 \cdot 0 \cdot 0 \cdot 1 + 2 \cdot 1 \cdot 0 
+\cdot 0 + 0 \cdot 0 \cdot 0 \cdot 2 + 0 \cdot 0 \cdot 1 \cdot 2 + 0 \cdot 1 \cdot 2 \cdot 0 \\
+&  + 1 \cdot 0 \cdot 0 \cdot 2 + 1 \cdot 2 \cdot 0 \cdot 0 + 1 \cdot 1 \cdot 1 \cdot 1 + 0 \cdot 0 
+\cdot 2 \cdot 1 + 0 \cdot 2 \cdot 1 \cdot 0 + 0 \cdot 0 \cdot 0 \cdot 1 \\
+& - 0 \cdot 2 \cdot 0 \cdot 0 - 0 \cdot 0 \cdot 0 \cdot 2 - 2 \cdot 1 \cdot 2 \cdot 1 - 0 \cdot 0 
+\cdot 2 \cdot 2 - 1 \cdot 0 \cdot 0 \cdot 0 - 0 \cdot 1 \cdot 1 \cdot 0 \\
+& - 1 \cdot 0 \cdot 0 \cdot 0 - 1 \cdot 2 \cdot 1 \cdot 2 - 1 \cdot 1 \cdot 0 \cdot 0 - 0 \cdot 0 
+\cdot 0 \cdot 0 - 0 \cdot 2 \cdot 2 \cdot 0 - 0 \cdot 0 \cdot 1 \cdot 1\\ 
 \operatorname{det}(B) & = 16 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 1 + 0 + 0 + 0 - 0 - 0 - 4 - 0 - 0 - 0 \\ & \quad \ - 0 - 4 - 0 - 0 - 0 - 0 \\
 \operatorname{det}(B) & = 17-8 \\
 \operatorname{det}(B) & = 9
