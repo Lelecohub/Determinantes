@@ -2,16 +2,28 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage[latin1]{inputenc}
-
-\title{F\'{o}rmula de Leibniz para Determinantes}
-\author{Enri Lopes Iwasaki}
-\date{22/04/2023}
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
 
 \begin{document}
-\maketitle
+
+% CAPA
+\begin{titlepage} 
+\begin{center} 
+{\large FATEC Rubens Lara}\\[0.2cm] 
+{\large Ci\^{e}ncia de Daods}\\[0.2cm]
+{\large Matem\'{a}tica B\'{a}sica}\\[4.1cm]
+{\bf \huge Exerc\'{i}cios: F\'{o}rmula de Leibniz}\\[0.4cm]
+{\bf \huge para Determinantes}\\[4.1cm] 
+{\large Enri Lopes Iwasaki}\\[0.5cm] 
+{\large Leandro Costa Santos}\\[4.7cm]
+{\large Santos}\\[0.2cm]
+{\large 2023}
+\end{center}
+\end{titlepage}
 
 % EXERCÍCIO I
-1) Deduza o determinante de uma matriz 4x4 usando a f\'{o}rmula:  
+1) Deduza o determinante de uma matriz 4x4 usando a f\'{o}rmula:   
 
 $$\operatorname{det}(A)=\sum_{\sigma \in S_{n}}  \left(\prod_{i=1}^{n} (-1)^ {\operatorname{sgn}(\sigma)}  ai \sigma (i) \right)$$
 
@@ -260,5 +272,26 @@ $
     \operatorname{det}(B) & = 9
 \end{aligned}
 \]
+
+%Exercicio 3
+3) Programar o m\'{e}todo em Python e demonstrar execu\c{c}\~{a}o no console:
+\\
+
+\begin{figure} [h]
+    \includegraphics[width=15cm, height=13cm]{determinantes.png}
+\end{figure}
+
+\newpage
+Demonstra\c{c}\~{a}o do Console:
+\begin{multicols}{2}
+\begin{itemize}
+    \item det = 0
+    \item det $\neq$ 0
+\end{itemize}
+\end{multicols}
+\begin{figure} [h]
+    \includegraphics[width=7.5cm, height=14cm]{DET 1.jpg}
+    \includegraphics[width=7.5cm, height=14cm]{DET 2.jpg}
+\end{figure}
 
 \end{document}
